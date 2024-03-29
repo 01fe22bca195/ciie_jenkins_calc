@@ -1,4 +1,5 @@
-class Calc {
+class Calc extends ExtendedCalc
+{
 
      float addition(float operand_1,float operand_2){
          return(operand_1+operand_2);
@@ -33,6 +34,10 @@ class Calc {
          float div_result=c.division(operand_1,operand_2);
          System.out.println("Division result is : "+div_result);
 
+         float sqr_result=c.square(operand_1);
+         System.out.println("Square result is : "+sqr_result);
  
+         float cube_result=c.cube(operand_1);
+         System.out.println("Cube result is : "+cube_result);
      }
  }
